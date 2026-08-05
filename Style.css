@@ -447,3 +447,160 @@ justify-content:center;
 ::-webkit-scrollbar-track{
     background:#0f172a;
 }
+/* ===========================================
+   ANIMATIONS
+=========================================== */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.hero-content{
+    animation:fadeUp 1s ease;
+}
+
+.card,
+.project-card,
+.timeline-item{
+    animation:fadeUp .8s ease;
+}
+
+/* ===========================================
+   SECTION TITLE
+=========================================== */
+
+.section-title{
+    font-size:42px;
+    text-align:center;
+    margin-bottom:50px;
+    color:#ffffff;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:80px;
+    height:4px;
+    background:#38bdf8;
+    display:block;
+    margin:15px auto;
+    border-radius:10px;
+}
+
+/* ===========================================
+   PROJECT BUTTONS
+=========================================== */
+
+.project-links{
+    margin-top:20px;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.project-links a{
+    background:#38bdf8;
+    color:#0f172a;
+    padding:10px 18px;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.project-links a:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 18px rgba(56,189,248,.35);
+}
+
+/* ===========================================
+   CONTACT
+=========================================== */
+
+#contact{
+    text-align:center;
+}
+
+#contact p{
+    margin:12px 0;
+    color:#cbd5e1;
+}
+
+#contact a{
+    color:#38bdf8;
+}
+
+/* ===========================================
+   FOOTER
+=========================================== */
+
+footer{
+    margin-top:80px;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+footer p{
+    color:#94a3b8;
+    font-size:15px;
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:992px){
+
+.hero{
+    text-align:center;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar{
+    padding:20px;
+}
+
+.navbar ul{
+    gap:15px;
+}
+
+.hero{
+    padding:120px 25px;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero h2{
+    font-size:22px;
+}
+
+.hero-buttons{
+    flex-direction:column;
+    align-items:center;
+}
+
+.btn,
+.btn2{
+    width:220px;
+    text-align:center;
+}
+
+.grid,
